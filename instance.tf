@@ -4,7 +4,7 @@ resource "aws_instance" "web1" {
   key_name      = "terroform"
 
 
-  tags {
+  tags = {
     Name = "Hello_Abdul"
   }
 }
