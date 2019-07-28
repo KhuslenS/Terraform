@@ -4,10 +4,10 @@ resource "aws_security_group" "sec1" {
   vpc_id      = "${vpc-064fe67e}"
 
   ingress {
-  from_port = 22
+    from_port   = 22
     to_port     = 22
     protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0" "192.168.1.0/0"]
+    cidr_blocks = ["0.0.0.0/0", "192.168.1.0/0"]
 
   }
 }
