@@ -1,4 +1,4 @@
 resource "aws_key_pair" "local" {
   key_name   = "terroform"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCeE2zgbxglIAtFi5BS/XQGEvm+V4Ex5n6L5xNu8lR/1Bcz8RIuBcdGobdKk7U+irPU1oPYXd0HvozZq01vYYyDxfc/mmgYva0D2hlZ3pNoUPbmU+hmBgC8B0q6KBf4izt2o3WmqCIko6JoXkP1qqUSZlAtg7w99szuR9iQW9agSC4e1g1CxH6J0UT15UMMLYNws9epzgmNkrOG6c2fZ83VRFwxAoyAyUwO9VYBo0aSn+IZ1kjLPwXb2CCjA8sM/Ys2I1328vM4qJQjPW+qLqBoCIslqYPaRsF47z0b4NWSH0hQ9td6gxNdZt1y1Jb5bO/qfCu7fAKmPLBmitRpndd root@terraform"
+  public_key = "${file("~/.ssh/id_rsa.pub")}"
 }
