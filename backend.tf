@@ -2,7 +2,7 @@ terraform {
 
   backend "s3" {
     bucket = "terraform-april-2019-chris"
-    region = "us-west-2"
+    region = "us-east-1"
     key    = "dev.tfstate"
   }
 }
